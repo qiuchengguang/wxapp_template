@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+ "window": {
+  "navigationBarBackgroundColor": "#07A1FF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "摩盒CMS",
+  "backgroundColor": "#EDEDED",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}
+}

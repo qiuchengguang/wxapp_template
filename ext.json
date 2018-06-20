@@ -1,0 +1,19 @@
+{
+  "extEnable": true,
+  "extAppid": "wx57211f0673951bfb",
+  "directCommit": false,
+  "ext": {
+    "appid": "wx57211f0673951bfb"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#07A1FF",
+    "navigationBarTitleText": "魔盒网络",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EDEDED"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

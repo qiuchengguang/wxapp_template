@@ -1,0 +1,19 @@
+<import src="../movie/movie-template.wxml" />
+<template name="moviegirtTemplate">
+
+  <scroll-view scroll-x="false" scroll-y="true" bindscrolltolower="onScroll" class="grid-container">
+    <block wx:for="{{movies}}" wx:key>
+      <!-- //接受到了data这个数据之后就开始把它赋予进去并且开始绑定，这里就是关系到数据绑定过程中从上面绑定到下面的过程  -->
+      <view class="single-view-container">
+       <view class="movie-container" >
+        <image class="movie-img" src="{{item.reply_pic}}"></image>
+        <view class='title'><text class="movie-title">{{item.reply_title}}</text></view>
+        <view><text class="movie-time">{{item.apply_start_time}}</text></view> </view></view>
+
+      <!-- //<template is="movietemplate"/ data="movie">这是错的，没加双括号,还有...，让数据平铺   -->
+    </block>
+    <!-- //记得加双引号 -->
+  </scroll-view>
+
+
+</template>

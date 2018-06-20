@@ -1,0 +1,34 @@
+/* pages/welcome/welcome.wxss */
+  @import"../moviegrit/moviegrit-template.wxss";  
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #eeeeee;  
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-item{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 25%;  
+    color: #666666;  
+}  
+     /* .a.swiper-tab-item{
+   border:0.1rpx solid;
+  border-radius:0.5rpx;
+  color: #f10b2e;
+  background:#9da; 
+  color: #f10b2e;
+  text-align: center;  
+    line-height: 80rpx;
+
+}       */
+.on{ color: #f10b2e;  
+    border-bottom: 5rpx solid #f10b2e;}  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow-x: hidden;
+ }  
+.swiper-box view{  
+    text-align: center;  
+}  
+.page{
+  background-color: #EDEDED;
+
+}
+ 

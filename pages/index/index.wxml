@@ -1,0 +1,49 @@
+<!--pages/welcome/welcome.wxml-->
+<import src="../moviegrit/moviegrit-template.wxml" />
+<!-- <import src="../movie-girt/moviegirt-template.wxml" /> 这里是绝对路径，以防万一相对路径不能引入 -->
+<view class="swiper-tab">
+  <view class="swiper-tab-item special {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav" data-type="all" data-category='全部投票'>全部投票</view>
+  <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav" data-type="0" data-category='图文投票'>图文投票</view>
+  <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav" data-type="1" data-category='音乐投票'>音乐投票</view>
+  <view class="swiper-tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav" data-type="2" data-category='视频投票'>视频投票</view>
+</view>
+<view class='page'><swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - -10000}}px" bindchange="bindChange" >
+
+  <swiper-item >
+    <view>
+    
+      <view class='movies-template'>
+        <template is="moviegirtTemplate" data="{{movies}}" wx:key />
+      </view>
+      
+    </view>
+
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <view class='movies-template'>
+        <template is="moviegirtTemplate" data="{{movies}}"  />
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <view class='movies-template'>
+        <template is="moviegirtTemplate" data="{{movies}}"  />
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+     
+      <view class='movies-template' >
+        <template is="moviegirtTemplate" data="{{movies}}"  />
+      </view>
+    </view>
+    
+  </swiper-item>
+
+</swiper></view>
+
+
+ 

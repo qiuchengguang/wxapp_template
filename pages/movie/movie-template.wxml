@@ -1,0 +1,10 @@
+<!-- 这个是投票图标的小模板 -->
+<template name="movietemplate">
+  <view class="movie-container" catchtap='onMovietap' data-movieid='{{movieid}}'>
+<!-- 这个onmovietap的函数在movie.js中 -->
+    <image class="movie-img" src="{{item.reply_pic}}" ></image>
+    <text class="movie-title">{{item.reply_title}}</text>
+    <text class="movie-time">{{item.apply_start_time}}</text>
+
+  </view>
+</template>
